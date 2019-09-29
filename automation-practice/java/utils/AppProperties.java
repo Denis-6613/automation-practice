@@ -16,7 +16,9 @@ public class AppProperties {
 	
 	private static Properties properties=getProperties();
 	
-	public static final String BASE_URL=properties.getProperty("base_url");
+	public static final String TEST_LEAF_BASE_URL=properties.getProperty("test_leaf_base_url");
+	public static final String AUTOMATION_PRACTICE_BASE_URL=properties.getProperty("automation_practice_base_url");
+	public static final String THE_INTERNET_BASE_URL=properties.getProperty("the_internet_base_url");
 	
 	public static final String BROWSER_TYPE=properties.getProperty("browser_type");
 	

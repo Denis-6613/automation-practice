@@ -1,4 +1,7 @@
 package utils;
+
+import com.github.javafaker.Faker;
+
 /**
  * Sep 22, 2019
  * @author Denis
@@ -7,6 +10,9 @@ package utils;
 
 public class Common {
 
+	private static Faker faker = new Faker();
+	
+	
 	public static void sleep(int seconds) {
 		try {
 			Thread.sleep(seconds * 1000);
@@ -16,6 +22,14 @@ public class Common {
 		}
 	}
 
+	public static String getRandomFirstName() {
+		return faker.firstName();
+	}
+	
+	public static String getRandomLastName() {
+		return faker.lastName();
+	}
+	
 	public static String getRandomEmail(String firstName, String lastName) {
 		String[] emails = { "@gmail.com", "@yahoo.com", "@hotmail.com", "@aol.com", "@hotmail.co.uk", "@hotmail.fr",
 				"@msn.com", "@yahoo.fr", "@wanadoo.fr", "@orange.fr", "@comcast.net", "@yahoo.co.uk", "@yahoo.com.br",
