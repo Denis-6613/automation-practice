@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Login tests]">
+  <test name="ChromeTests(failed)">
+    <classes>
+      <class name="com.automationpractice.login.LoginTests">
+        <methods>
+          <include name="Login_with_valid_userid_but_invalid_password"/>
+          <include name="Login_with_invalid_userid"/>
+          <include name="Login_with_valid_userid_and_password"/>
+        </methods>
+      </class> <!-- com.automationpractice.login.LoginTests -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+</suite> <!-- Failed suite [Login tests] -->

@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6089" started-at="2019-09-29T19:05:51Z" finished-at="2019-09-29T19:05:57Z">
+  <suite name="Default suite" duration-ms="25640" started-at="2019-10-06T16:19:21Z" finished-at="2019-10-06T16:19:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6089" started-at="2019-09-29T19:05:51Z" finished-at="2019-09-29T19:05:57Z">
-      <class name="com.automationpractice.user_registration.UserRegistration_09_28_2019">
-        <test-method status="PASS" signature="userRegistration()[pri:0, instance:com.automationpractice.user_registration.UserRegistration_09_28_2019@e25951c]" name="userRegistration" duration-ms="6074" started-at="2019-09-29T15:05:51Z" finished-at="2019-09-29T15:05:57Z">
+    <test name="Default test" duration-ms="25640" started-at="2019-10-06T16:19:21Z" finished-at="2019-10-06T16:19:47Z">
+      <class name="com.herokuapp.testleaf.Window_10_06_2019">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.herokuapp.testleaf.Window_10_06_2019@59f99ea]" name="init" is-config="true" duration-ms="3202" started-at="2019-10-06T12:19:21Z" finished-at="2019-10-06T12:19:24Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userRegistration -->
-      </class> <!-- com.automationpractice.user_registration.UserRegistration_09_28_2019 -->
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="windowTest1()[pri:0, instance:com.herokuapp.testleaf.Window_10_06_2019@59f99ea]" name="windowTest1" duration-ms="2082" started-at="2019-10-06T12:19:24Z" finished-at="2019-10-06T12:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowTest1 -->
+        <test-method status="PASS" signature="windowTest2()[pri:0, instance:com.herokuapp.testleaf.Window_10_06_2019@59f99ea]" name="windowTest2" duration-ms="217" started-at="2019-10-06T12:19:27Z" finished-at="2019-10-06T12:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowTest2 -->
+        <test-method status="PASS" signature="windowTest3()[pri:0, instance:com.herokuapp.testleaf.Window_10_06_2019@59f99ea]" name="windowTest3" duration-ms="6604" started-at="2019-10-06T12:19:27Z" finished-at="2019-10-06T12:19:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowTest3 -->
+        <test-method status="PASS" signature="windowTest4()[pri:0, instance:com.herokuapp.testleaf.Window_10_06_2019@59f99ea]" name="windowTest4" duration-ms="12864" started-at="2019-10-06T12:19:33Z" finished-at="2019-10-06T12:19:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- windowTest4 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.herokuapp.testleaf.Window_10_06_2019@59f99ea]" name="closeBrowser" is-config="true" duration-ms="651" started-at="2019-10-06T12:19:46Z" finished-at="2019-10-06T12:19:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.herokuapp.testleaf.Window_10_06_2019 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

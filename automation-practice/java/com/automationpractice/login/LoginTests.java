@@ -16,7 +16,8 @@ public class LoginTests extends Driver{
 	
 	private final int timeOutInSeconds = 15;
 	
-	@Test (priority = 1)
+//	@Test (priority = 1, groups = "functional")
+	@Test (groups = "functional")
 	public void Login_with_invalid_userid() {
 		
 //			Go to http://www.automationpractice.com

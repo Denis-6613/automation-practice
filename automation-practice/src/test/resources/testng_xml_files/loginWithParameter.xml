@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "testng-1.0.dtd">
+<suite name="Suite">
+  <test name="Test">
+  
+  <parameter name="userid" value="XXXabc213@mailinator.com"/>
+  <parameter name="password" value="XXXabc1234"/>
+  
+    <classes>
+         <class name="com.automationpractice.demos.TestNGParameterDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

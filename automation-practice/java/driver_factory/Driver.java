@@ -6,13 +6,16 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.AppProperties;
+import utils.DriverHelper;
 
 public class Driver {
 	
 	protected static WebDriver driver;
+	protected static DriverHelper driverHelper;
 	
 	static {
 		driver=getDriver(AppProperties.BROWSER_TYPE);
@@ -37,6 +40,7 @@ public class Driver {
 		driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);/* implicit wait. Wait for all elements loaded to html up to X seconds. 
 		When all elements found (loaded) - executes. Loaded faster - good, executes then.	*/
+		driverHelper= new DriverHelper(driver);
 		return driver;
 	}
 	
@@ -52,6 +56,12 @@ public class Driver {
 		WebDriverManager.firefoxdriver().setup();
 //		System.setProperty("webdriver.gecko.driver", "C:\\Program Files\\Java\\geckodriver.exe");
 		return new FirefoxDriver();
+	}
+	
+	@AfterTest
+	public void closeBrowser() {
+		driver.close();
+		driver.quit();
 	}
 	
 }

@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Smoke Tests">
+ 
+  <test name="registration tests">
+    <classes>
+      <class name="com.automationpractice.user_registration.UserRegistration_09_28_2019"/>
+      <class name="com.automationpractice.login.LoginTests"/>
+      
+    </classes>
+  </test>
+</suite>

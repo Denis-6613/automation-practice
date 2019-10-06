@@ -57,7 +57,7 @@ public class UserRegistration_09_28_2019 extends Driver{
 				
 		
 		
-		driver.quit();
+//		driver.quit();
 		
 //		System.out.println("Our random name is "+firstName+" "+lastName);
 //		System.out.println("Our random e-mail is "+email);

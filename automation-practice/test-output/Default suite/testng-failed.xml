@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.automationpractice.user_registration.UserRegistration_09_28_2019">
+      <class name="com.herokuapp.the_internet.FileDownload_10_05_2019">
         <methods>
-          <include name="userRegistration"/>
+          <include name="init"/>
+          <include name="closeBrowser"/>
+          <include name="fileDownloadTest1"/>
         </methods>
-      </class> <!-- com.automationpractice.user_registration.UserRegistration_09_28_2019 -->
+      </class> <!-- com.herokuapp.the_internet.FileDownload_10_05_2019 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
