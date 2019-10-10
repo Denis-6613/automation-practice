@@ -25,6 +25,7 @@ public final class DriverHelper {
 	
 	public void openUrl(String url) {
 		driver.get(url);
+		Reporter.step.info("Navigated to: "+url);
 		mainWindowhandle=driver.getWindowHandle();
 	}
 	
@@ -54,6 +55,7 @@ public final class DriverHelper {
 	
 	public void click(By by, int timeOutInSeconds ) {
 		getElement(by, timeOutInSeconds).click();
+	    Reporter.step.info("Clicked on element");
 	}
 
 	public void click(By by, int index, int timeOutInSeconds ) {
@@ -73,7 +75,7 @@ public final class DriverHelper {
 	}
 	
 	public String getText (By by, int timeOutInSeconds ) {
-		return getElement(by, timeOutInSeconds).getText();
+		return getElement(by, timeOutInSeconds).getText().replaceAll("\\s+", " ").trim();
 	}
 	
 	public void takeScreenshot() {

@@ -6,18 +6,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import utils.AppProperties;
 import utils.Common;
 import utils.DriverHelper;
+import utils.Reporter;
 
 public class NonStaticDriver {
 	
 	protected WebDriver driver;
 	protected DriverHelper driverHelper;
+	
+	@BeforeSuite
+	public void initializeReporter() {
+		Reporter.initReporter();
+	}
+	
+	@AfterMethod
+	public void saveReport() {
+		Reporter.saveReport();
+	}
 	
 	@BeforeTest
 	public void init() {

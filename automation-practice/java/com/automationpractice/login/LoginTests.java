@@ -120,7 +120,7 @@ public class LoginTests extends Driver{
 //		Click 'Sign out' button from top right corner
 		driverHelper.click(By.xpath("//a[@title='Log me out']"), timeOutInSeconds);
 		
-		driver.quit();
+//		driver.quit();
 		
 	}
 	
